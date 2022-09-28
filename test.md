@@ -3,5 +3,4 @@
 # Hello, World
 ## Hello, World
 [link](https://www.bilibili.com/video/BV1ZY4y1F77n/?spm_id_from=333.999.0.0)
-![image]
-(https://user-images.githubusercontent.com/114268165/192676899-ab92b91b-6375-4cf4-9204-4f90dc843762.JPEG)
+![image](https://user-images.githubusercontent.com/114268165/192677128-95865a98-ea07-41e4-a50f-ec7bd906142d.JPEG)
