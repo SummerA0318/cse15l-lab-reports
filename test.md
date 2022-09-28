@@ -14,3 +14,7 @@
 
 ---
 `end = 12.31`
+```
+Author: KPScarecrow
+Creator: Truewinter
+```
