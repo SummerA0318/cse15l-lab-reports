@@ -1,3 +1,3 @@
-![image][1]
+![image][screenshot]
 
-[1]: https://user-images.githubusercontent.com/114268165/192717259-39825cb7-1cce-4cd9-83cd-463dfe674444.png
+[screenshot]: https://user-images.githubusercontent.com/114268165/192719805-b5bf59c7-10b9-47d3-8f32-b9635c0e8174.jpg
