@@ -48,6 +48,8 @@ This time the process of changing the WhereAmI file and then run it in remote co
 
 Step 6:
 
+To use remote running more pleasant, I start to put the codes together in one line to decrease the run time.
+
 This time I spent 3 seconds running these commands together.
 
 ![image](https://user-images.githubusercontent.com/114268165/193389973-66ee814e-3751-4b11-aebf-bde25f2ba2ed.jpg)
