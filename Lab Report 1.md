@@ -1,6 +1,7 @@
 Step 1: download VS Code:
 People can download the app from https://code.visualstudio.com/. Since I have previously downloaded it, I have a screenshot of my previous codes.
-![image]()
+![step1](https://user-images.githubusercontent.com/114268165/193391609-1548eed3-77bd-44e4-a191-c2c96d7d4ed2.jpg)
+
 
 
 Step 2: Remote connecting
