@@ -7,7 +7,7 @@ People can download the app from https://code.visualstudio.com/. Since I have pr
 
 Step 2: Remote connecting
 
-I followed this tutorial [TUTORIAL] How to Reset your Password to change my password first with chrome. Then I login to my remote account with my new password.
+I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I login to my remote account with my new password.
 
 ![image](https://user-images.githubusercontent.com/114268165/193387757-0edf2fad-0554-44aa-ac12-06729532f11f.jpg)
 
