@@ -3,7 +3,6 @@ People can download the app from https://code.visualstudio.com/. Since I have pr
 ![step1](https://user-images.githubusercontent.com/114268165/193391609-1548eed3-77bd-44e4-a191-c2c96d7d4ed2.jpg)
 
 
-
 Step 2: Remote connecting
 I followed this tutorial [TUTORIAL] How to Reset your Password to change my password first with chrome. Then I login to my remote account with my new password.
 ![image](https://user-images.githubusercontent.com/114268165/193387757-0edf2fad-0554-44aa-ac12-06729532f11f.jpg)
@@ -19,8 +18,16 @@ Cd: change directory to somewhere I need
  
  
 Step 4: 
-First 
-The os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
+First I create a WhereAmI.java file with the following codes:
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+I save and run it on my local computer then use scp command to copy it onto my remote computer. Then I login to my remote account and save and run the WhereAmI file. I found that the os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
 The process takes me 1 minute 40 seconds. If I do it 100 times, I would spend about 2 hours and a half.
 ![image](https://user-images.githubusercontent.com/114268165/193388640-81748461-a1ad-4a74-bad3-7cc54b47eaa0.jpg)
 ![image](https://user-images.githubusercontent.com/114268165/193388860-3d70d416-2816-435c-b42c-0fda7b33d4f0.jpg)
