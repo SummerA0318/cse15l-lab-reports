@@ -31,7 +31,7 @@ Step 4:
 
 First I create a WhereAmI.java file, save it and run it on my local computer then use scp command to copy it onto my remote computer. Then I login to my remote account and save and run the WhereAmI file. I found that the os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
 
-The process takes me 1 minute 40 seconds. If I do it 100 times, I would spend about 2 hours and a half.
+The process of changing the WhereAmI file and then run it in remote computer takes me 1 minute 40 seconds. If I do it 100 times, I would spend about 2 hours and a half.
 
 ![image](https://user-images.githubusercontent.com/114268165/193388640-81748461-a1ad-4a74-bad3-7cc54b47eaa0.jpg)
 ![image](https://user-images.githubusercontent.com/114268165/193388860-3d70d416-2816-435c-b42c-0fda7b33d4f0.jpg)
@@ -40,7 +40,9 @@ The process takes me 1 minute 40 seconds. If I do it 100 times, I would spend ab
 
 Step 5:
 
-This time the process takes me 1 minute 10 seconds. I save half a minute on the same process!
+To not repeating my password everytime, I create a ssh key by command ssh-keygen. Since I save the key in directory /Users/yubinglin/.ssh/id_rsa, I login to my remote computer and use command mkdir .ssh to make sure the key files are in pair. Then I scp the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
+
+This time the process of changing the WhereAmI file and then run it in remote computer takes me 1 minute 10 seconds. I save half a minute on the same process!
 
 ![image](https://user-images.githubusercontent.com/114268165/193389669-f930e00a-fb56-426b-8878-5d417ba9730b.jpg)
 
