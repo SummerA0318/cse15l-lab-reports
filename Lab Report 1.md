@@ -10,9 +10,13 @@ I followed this tutorial [TUTORIAL] How to Reset your Password to change my pass
 
 Step 3: run commands
 I tried several commands and understand what they do.
+
 Pwd: shows you the current directory you’re in
+
 Ls: shows all files in the current directory
+
 Ls -a: shows all files including the hidden ones in the current directory
+
 Cd: change directory to somewhere I need
 ![image](https://user-images.githubusercontent.com/114268165/193388235-7a959267-159e-4973-bc12-24b5fde976b9.jpg)
  
