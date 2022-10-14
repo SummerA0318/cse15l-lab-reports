@@ -62,10 +62,11 @@ Sava and run the WhereAmI file on the remote computer
 
 To not repeating my password everytime, I create a ssh key on my local computer by command `ssh-keygen` and I get the following reponse from terminal:
 ```
+$ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key:
 ```
-I enter the directory "/Users/yubinglin/.ssh/id_rsa" to save the key, then terminal appears like:
+I enter the directory "/Users/yubinglin/.ssh/id_rsa" to save the key, then terminal shows something like:
 ```
 $ ssh-keygen
 Generating public/private rsa key pair.
@@ -75,7 +76,7 @@ Enter same passphrase again:
 Your identification has been saved in /Users/yubinglin/.ssh/id_rsa.
 Your public key has been saved in /Users/yubinglin/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 linyubing@linyubingdeMacBook-Pro.local
 The key's randomart image is:
 +---[RSA 3072]----+
 |                 |
@@ -89,10 +90,11 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
-The key image is generated randomly. Then I login to my remote computer by the ssh command again and use command `mkdir .ssh` to make sure their is a .ssh folder in my remote computer so that the key files are in pair. Then I use scp command to copy the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
+The key image is generated randomly. Then I login to my remote computer by the ssh command again and use command `mkdir .ssh` to make sure their is a ".ssh" folder in my remote computer so that the key files are in pair. Then I use scp command `scp /Users/yubinglin/.ssh/id_rsa.pub cs15lfa22pr@ieng6.ucsd.edu:~/.ssh/authorized_keys` to copy the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
 
 This time the process of changing the WhereAmI file and then run it in remote computer takes me 1 minute 10 seconds. I save half a minute on the same process!
 
+Login without entering password
 ![image](https://user-images.githubusercontent.com/114268165/193389669-f930e00a-fb56-426b-8878-5d417ba9730b.jpg)
 
 ## Step 6:
