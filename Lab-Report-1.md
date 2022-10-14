@@ -1,11 +1,11 @@
-Step 1: download VS Code:
+## Step 1: download VS Code:
 
 People can download the app from https://code.visualstudio.com/. Since I have previously downloaded it, I have a screenshot of my previous codes.
 
 ![step1](https://user-images.githubusercontent.com/114268165/193391609-1548eed3-77bd-44e4-a191-c2c96d7d4ed2.jpg)
 
 
-Step 2: Remote connecting
+## Step 2: Remote connecting
 
 I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I open the app terminal on my mac. I use the ssh command which can login to the remote account by `ssh cs15lfa22pr@ieng6.ucsd.edu` to login to my remote account with my new password. The "cs15lfa22pr@ieng6.ucsd.edu" is the name of my remote server on a UCSD computer while "cs15lfa22pr" is my username specific for this class.
 
@@ -14,7 +14,7 @@ This is the screenshot of using the ssh command to login to my remote computer.
 ![image](https://user-images.githubusercontent.com/114268165/193387757-0edf2fad-0554-44aa-ac12-06729532f11f.jpg)
 
 
-Step 3: run commands
+## Step 3: run commands
 
 I tried several commands and understand what they do.
 
@@ -31,7 +31,7 @@ This is the screenshot of trying different commands.
 ![image](https://user-images.githubusercontent.com/114268165/193388235-7a959267-159e-4973-bc12-24b5fde976b9.jpg)
  
  
-Step 4: Move file with scp
+## Step 4: Move file with scp
 
 First I create a WhereAmI.java file, which has the following codes:
 ```
@@ -53,7 +53,7 @@ The process of changing the WhereAmI file and then run it in remote computer tak
 ![image](https://user-images.githubusercontent.com/114268165/193389314-26b96349-e952-48b9-ae4d-0a6fffc0e066.jpg)
 
 
-Step 5:
+## Step 5:
 
 To not repeating my password everytime, I create a ssh key by command ssh-keygen. Since I save the key in directory /Users/yubinglin/.ssh/id_rsa, I login to my remote computer and use command mkdir .ssh to make sure the key files are in pair. Then I scp the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
 
@@ -61,7 +61,7 @@ This time the process of changing the WhereAmI file and then run it in remote co
 
 ![image](https://user-images.githubusercontent.com/114268165/193389669-f930e00a-fb56-426b-8878-5d417ba9730b.jpg)
 
-Step 6:
+## Step 6:
 
 To use remote running more pleasant, I start to put the codes together in one line to decrease the run time.
 
