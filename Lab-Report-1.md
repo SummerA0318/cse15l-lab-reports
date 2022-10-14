@@ -101,10 +101,11 @@ Login without entering password
 
 To use remote running more pleasant, I start to put the codes together in one line to decrease the run time.
 
-I use the command `javac WhereAmI.java; ssh cs15lfa22pr@ieng6.ucsd.edu "cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI"`
+I use the commands on the sam eline `javac WhereAmI.java; ssh cs15lfa22pr@ieng6.ucsd.edu "cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI"`. The commands are composed by firstly `javac WhereAmI.java;` on my local computer to save my changes in the file. Then `ssh cs15lfa22pr@ieng6.ucsd.edu` to login to my remote computer. Since there's no need to enter a password, I can continue to write commands on the same line that can run on the remote computer. Thus I continue to copy WhereAmI and OtherMain the two files by `cp WhereAmI.java OtherMain.java;`. At last I run the WhereAmI file by `java WhereAmI` and get the output. The ";" is used to seperate each command and '""' the quotation mark is used to contain all the commands that runs on the remote computer. When all the commands finish running, I am still on my local computer because the nested commands only allow me to operate on the remote computer instead of really login and stay on it.
 
 This time I spent 3 seconds running these commands together.
 
+Running multiple commands on the same line
 ![image](https://user-images.githubusercontent.com/114268165/193389973-66ee814e-3751-4b11-aebf-bde25f2ba2ed.jpg)
 
 
