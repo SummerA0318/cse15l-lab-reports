@@ -9,7 +9,7 @@ People can download the app from https://code.visualstudio.com/. Since I have pr
 
 I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I open the app terminal on my mac. I use the ssh command which can login to the remote account by `ssh cs15lfa22pr@ieng6.ucsd.edu` to login to my remote account with my new password. The "cs15lfa22pr@ieng6.ucsd.edu" is the name of my remote server on a UCSD computer while "cs15lfa22pr" is my username specific for this class.
 
-This is the screenshot of using the ssh command to login to my remote computer
+Using the ssh command to login to my remote computer
 
 ![image](https://user-images.githubusercontent.com/114268165/193387757-0edf2fad-0554-44aa-ac12-06729532f11f.jpg)
 
@@ -26,7 +26,7 @@ Ls -a: shows all files including the hidden ones in the current directory
 
 Cd: change directory to somewhere I need
 
-This is the screenshot of trying different commands
+Trying different commands
 
 ![image](https://user-images.githubusercontent.com/114268165/193388235-7a959267-159e-4973-bc12-24b5fde976b9.jpg)
  
@@ -58,9 +58,38 @@ Sava and run the WhereAmI file on the remote computer
 ![image](https://user-images.githubusercontent.com/114268165/193389314-26b96349-e952-48b9-ae4d-0a6fffc0e066.jpg)
 
 
-## Step 5:
+## Step 5: Setting ssh key
 
-To not repeating my password everytime, I create a ssh key by command ssh-keygen. Since I save the key in directory /Users/yubinglin/.ssh/id_rsa, I login to my remote computer and use command mkdir .ssh to make sure the key files are in pair. Then I scp the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
+To not repeating my password everytime, I create a ssh key on my local computer by command `ssh-keygen` and I get the following reponse from terminal:
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key:
+```
+I enter the directory "/Users/yubinglin/.ssh/id_rsa" to save the key, then terminal appears like:
+```
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key: /Users/yubinglin/.ssh/id_rsa
+Enter passphrase: 
+Enter same passphrase again: 
+Your identification has been saved in /Users/yubinglin/.ssh/id_rsa.
+Your public key has been saved in /Users/yubinglin/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+The key image is generated randomly. Then I login to my remote computer by the ssh command again and use command `mkdir .ssh` to make sure their is a .ssh folder in my remote computer so that the key files are in pair. Then I use scp command to copy the key on my local computer to be on my remote computer. Finally I no longer need to enter my password and can just login to my remote computer!
 
 This time the process of changing the WhereAmI file and then run it in remote computer takes me 1 minute 10 seconds. I save half a minute on the same process!
 
