@@ -97,9 +97,11 @@ This time the process of changing the WhereAmI file and then run it in remote co
 Login without entering password
 ![image](https://user-images.githubusercontent.com/114268165/193389669-f930e00a-fb56-426b-8878-5d417ba9730b.jpg)
 
-## Step 6:
+## Step 6: Running multiple commands on the same line
 
 To use remote running more pleasant, I start to put the codes together in one line to decrease the run time.
+
+I use the command `javac WhereAmI.java; ssh cs15lfa22pr@ieng6.ucsd.edu "cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI"`
 
 This time I spent 3 seconds running these commands together.
 
