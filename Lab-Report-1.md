@@ -7,7 +7,8 @@ People can download the app from https://code.visualstudio.com/. Since I have pr
 
 ## Step 2: Remote connecting
 
-I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I open the app terminal on my mac. I use the ssh command which can login to the remote account by `ssh cs15lfa22pr@ieng6.ucsd.edu` to login to my remote account with my new password. The "cs15lfa22pr@ieng6.ucsd.edu" is the name of my remote server on a UCSD computer while "cs15lfa22pr" is my username specific for this class.
+I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I open the app terminal on my mac. I use the ssh command which can login to the remote account by 
+**`ssh cs15lfa22pr@ieng6.ucsd.edu`** to login to my remote account with my new password. The "cs15lfa22pr@ieng6.ucsd.edu" is the name of my remote server on a UCSD computer while "cs15lfa22pr" is my username specific for this class.
 
 Using the ssh command to login to my remote computer
 
