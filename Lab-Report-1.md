@@ -32,19 +32,12 @@ Step 4: Move file with scp
 First I create a WhereAmI.java file, which has the following codes:
 ```
 class WhereAmI {
-
   public static void main(String[] args) {
-  
     System.out.println(System.getProperty("os.name"));
-    
     System.out.println(System.getProperty("user.name"));
-    
     System.out.println(System.getProperty("user.home"));
-    
     System.out.println(System.getProperty("user.dir"));
-    
   }
-  
 }
 ```
 Then I save it and run it on my local computer then use scp command to copy it onto my remote computer. Then I login to my remote account and save and run the WhereAmI file. I found that the os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
