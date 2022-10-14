@@ -9,7 +9,7 @@ People can download the app from https://code.visualstudio.com/. Since I have pr
 
 I followed this tutorial [link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) How to Reset your Password to change my password first with chrome. Then I open the app terminal on my mac. I use the ssh command which can login to the remote account by `ssh cs15lfa22pr@ieng6.ucsd.edu` to login to my remote account with my new password. The "cs15lfa22pr@ieng6.ucsd.edu" is the name of my remote server on a UCSD computer while "cs15lfa22pr" is my username specific for this class.
 
-This is the screenshot of using the ssh command to login to my remote computer.
+This is the screenshot of using the ssh command to login to my remote computer
 
 ![image](https://user-images.githubusercontent.com/114268165/193387757-0edf2fad-0554-44aa-ac12-06729532f11f.jpg)
 
@@ -26,7 +26,7 @@ Ls -a: shows all files including the hidden ones in the current directory
 
 Cd: change directory to somewhere I need
 
-This is the screenshot of trying different commands.
+This is the screenshot of trying different commands
 
 ![image](https://user-images.githubusercontent.com/114268165/193388235-7a959267-159e-4973-bc12-24b5fde976b9.jpg)
  
@@ -44,12 +44,17 @@ class WhereAmI {
   }
 }
 ```
-I save it and run it on my local computer. Then I use scp command which can copy a file from local computer to remote computer by `scp WhereAmI.java cs15lfa22pr@ieng6.ucsd.edu`. "WhereAmI.java" is the file I want to copy onto the remote computer, and "cs15lfa22pr@ieng6.ucsd.edu" is the remote computer I want to copy onto. Then I login to my remote account by ssh command again and save and run the WhereAmI file. I found that the os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
+I save it and run it on my local computer by `javac WhereAmI.java` `java WhereAmI`. Then I use scp command which can copy a file from local computer to remote computer by `scp WhereAmI.java cs15lfa22pr@ieng6.ucsd.edu:~/`. "WhereAmI.java" is the file I want to copy onto the remote computer, and "cs15lfa22pr@ieng6.ucsd.edu" is the remote computer I want to copy onto, ":~/" means I copy the file into the default path on the remote computer. Then I login to my remote account by ssh command again and save and run the WhereAmI file by `javac WhereAmI.java` `java WhereAmI` again. I found that the os.name, username, user home and user directory of local computer and remote computer are all different which shows that I am really on two different computers with two different accounts. It seems that getProperty is a built-in function that can get some basic information for the computer and account.
 
 The process of changing the WhereAmI file and then run it in remote computer takes me 1 minute 40 seconds. If I do it 100 times, I would spend about 2 hours and a half.
 
+Save and run the WhereAmI file on my local computer
 ![image](https://user-images.githubusercontent.com/114268165/193388640-81748461-a1ad-4a74-bad3-7cc54b47eaa0.jpg)
+
+Using the scp command to copy the WhereAmI file onto the remote computer
 ![image](https://user-images.githubusercontent.com/114268165/193388860-3d70d416-2816-435c-b42c-0fda7b33d4f0.jpg)
+
+Sava and run the WhereAmI file on the remote computer
 ![image](https://user-images.githubusercontent.com/114268165/193389314-26b96349-e952-48b9-ae4d-0a6fffc0e066.jpg)
 
 
