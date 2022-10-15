@@ -54,8 +54,4 @@ class SearchEngine {
     }
 }
  ```
- ![2](https://user-images.githubusercontent.com/114268165/195963151-c1246d6a-7836-4fc6-987b-9bd32b4747e4.jpg)
-
-![image](./1.jpg)
-![image](./2.jpg)
 
