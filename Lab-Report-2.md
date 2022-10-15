@@ -55,6 +55,10 @@ class SearchEngine {
 }
  ```
 
+I am using the main method to create the website. I enter 4000 in the terminal when creating the website by command `javac SearchEngine.java; java SearchEngine 4000`. The website shows an error of nullPointerException as the result.
 ![image](./1.jpg)
 
+I am using the handleRequest method which has the adding part in it. I directly add "/add?s=apple" to the url to achieve this instead of writing commands in terminal. I update the variable strs which stores all the added values to be website in it.
 ![image](./2.jpg)
+
+![image](./3.jpg)
