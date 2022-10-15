@@ -63,3 +63,79 @@ I am using the handleRequest method which has the adding part in it. I directly 
 
 I am using the handleRequest method which has the searching part in it. Since there is no target string in the strs array, it only returns a empty string so nothing appears on the website.
 ![image](./3.jpg)
+
+
+## Part 2: Debug
+
+For averageWithoutLowest method in the ArrayExamples file which has codes like this:
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+
+    for(double num: arr) {
+        if(num != lowest) { sum += num;}
+    }
+    return sum / (arr.length - 1);
+  }
+ ```
+ 
+I write the test which is the failure inducing input as:
+```
+@Test
+  public void testAverage2() {
+    double[] input1 = {1.0, 1.0, 1.0, 1.0};
+    assertEquals(1.0, ArrayExamples.averageWithoutLowest(input1), 0.001);
+  }
+```
+
+ And the syptom which is the result of test is:
+ 
+![array](https://user-images.githubusercontent.com/114268165/195963857-af6b00d0-7d99-4018-b70f-5cd777e7893c.jpg)
+
+The bug of the method is `if(num != lowest) { sum += num;}`. It only adds those number which are not equal to the lowest one into the sum but when there are multiple numbers with the same lowest value, it is only expected to delete one of them instead of all. So when the given array is composed by multiple same numbers, it will not count any of them into the sum and return 0 as the mean while it should only remove one number and return the value of the mean of numbers which is 1.
+
+
+The second test is for filter method in ListExamples file which has codes like this:
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
+
+I write a test and a StringChecker method to test it:
+```
+@Test
+  public void testFilter() {
+    List<String> original = new ArrayList<>();
+    original.add("1234");
+    original.add("acbd");
+    original.add("678");
+    List<String> expected = new ArrayList<>();
+    expected.add("1234");
+    expected.add("acbd");
+    assertEquals(expected, ListExamples.filter(original, new filter()));
+  }
+  
+class filter implements StringChecker {
+  public boolean checkString(String var1) {
+    return (var1.length() > 3);
+  }
+}
+```
+
+ And the syptom which is the result of test is:
+ 
+ ![list](https://user-images.githubusercontent.com/114268165/195964859-69aa007c-482f-46cd-aa35-8b7cd86f9be8.jpg)
+ 
+ The bug of the method is `result.add(0, s);` It add astring every time at index 0 which inverse the order of the original List while we expected the order to be the same.
