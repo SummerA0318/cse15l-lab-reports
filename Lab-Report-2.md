@@ -3,40 +3,39 @@
 My code for SearchEngine.java is the following:
 
  ```
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
     int num = 0;
+    ArrayList<String> words = new ArrayList<String>();
 
     public String handleRequest(URI url) {
-        String[] strs = {};
-        String[] newarr = {};
-        String[] parameters = url.getQuery().split("=");
         if (url.getPath().equals("/add")) {
-            if (parameters[0].equals("?s") & Arrays.asList(strs).contains(parameters[1])) {
-                newarr = new String[strs.length + 1];
-                for (int i=0; i<strs.length; i++) {
-                    newarr[i] = strs[i]; 
-                }
-                newarr[strs.length] = parameters[1];
-                strs = newarr.clone();
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                words.add(parameters[1]);
             }
-            return null;
-        } else {   
-            if (url.getPath().equals("/search")) {
-                String target = "";
-                String newtarget = "";
-                for (String str: strs) {
-                    if (str.contains(parameters[1])) {
-                        newtarget = target + " and " + str;
-                        target = newtarget;
-                    }
+            return parameters[1] + " Added!";
+        } else if (url.getPath().equals("/search")) {
+            String target = "";
+            String newtarget = "";
+            String[] parameters = url.getQuery().split("=");
+            for (String str: words) {
+                if (str.contains(parameters[1])) {
+                    newtarget = target + " " + str;
+                    target = newtarget;
                 }
-                return target;
             }
-            return null;
+            if (target.equals("")) {
+                return "Search failed!";
+            }
+            return target;
+        } else {
+            return "404 Not Found!";
         }
     }
 }
@@ -55,7 +54,7 @@ class SearchEngine {
 }
  ```
 
-I am using the main method to create the website. I enter 4000 in the terminal when creating the website by command `javac SearchEngine.java; java SearchEngine 4000`. The website shows an error of nullPointerException as the result which I don't know why.
+I am using the main method to create the website. I enter 4000 in the terminal when creating the website by command `javac SearchEngine.java; java SearchEngine 4000`. The website runs and is initialize with the message "404 Not Found!"
 ![image](./1.jpg)
 
 I am using the handleRequest method which has the adding part in it. I directly add "/add?s=apple" to the url to achieve this instead of writing commands in terminal. I update the variable strs which stores all the added values to be website in it. The website shows an error and I still don't have any thoughts about why it happens.
