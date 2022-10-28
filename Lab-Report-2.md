@@ -67,7 +67,7 @@ Then I add two by add "/add?s=two" to the url.
 ![image](./add2.jpg)
 
 This time I can search for the strings inside by "/search?s=o". As "one" and "two" both contains "o", they both appear.
-![image](./search0.jpg)
+![image](./searcho.jpg)
 
 
 ## Part 2: Debug
