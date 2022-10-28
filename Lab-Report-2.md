@@ -54,14 +54,20 @@ class SearchEngine {
 }
  ```
 
-I am using the main method to create the website. I enter 4000 in the terminal when creating the website by command `javac SearchEngine.java; java SearchEngine 4000`. The website runs and is initialize with the message "404 Not Found!"
-![image](./1.jpg)
+I am using the main method to create the website. I enter 4000 in the terminal when creating the website by command `javac SearchEngine.java; java SearchEngine 4000`. The website runs and is initialize with the message "404 Not Found!".
+![image](./start.jpg)
 
-I am using the handleRequest method which has the adding part in it. I directly add "/add?s=apple" to the url to achieve this instead of writing commands in terminal. I update the variable strs which stores all the added values to be website in it. The website shows an error and I still don't have any thoughts about why it happens.
-![image](./2.jpg)
+I am using the handleRequest method which has the adding part in it. I directly add "/add?s=one" to the url to achieve this instead of writing commands in terminal. I update the variable words which stores all the added values to be website in it. The website shows "one Added" as I expected.
+![image](./add.jpg)
 
-I am using the handleRequest method which has the searching part in it. Since there is no target string in the strs array, it only returns a empty string so nothing appears on the website.
-![image](./3.jpg)
+I am using the handleRequest method which has the searching part in it adding "/search?s=two". Since there is no target string "two" in the strs array, it returns "Search Failed!".
+![image](./search2.jpg)
+
+Then I add two by add "/add?s=two" to the url.
+![image](./add2.jpg)
+
+This time I can search for the strings inside by "/search?s=o". As "one" and "two" both contains "o", they both appear.
+![image](./search0.jpg)
 
 
 ## Part 2: Debug
