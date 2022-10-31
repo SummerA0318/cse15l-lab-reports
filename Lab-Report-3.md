@@ -1,6 +1,6 @@
 I choose grep as my command and the first interesting option is `grep -i` which can search for the word without the limit of upper or lower case.
 
-My first example is to search in all the documents in the technical folder from lab4, and I get all the lines from all the txt files in the folder that contains the word "chapter" while being case insensitive:
+My first example is to search in all the documents in the technical folder from lab4 for the word "CHAPTER", and I get all the lines from all the txt files in the folder that contains the word while being case insensitive:
 
  ```
 linyubing@linyubingdeMacBook-Pro lab4 % grep -i "CHAPTER" */*/*.txt
@@ -128,7 +128,7 @@ technical/plos/journal.pbio.0020439.txt:        Nine Chapters of the Mathematica
 technical/plos/journal.pbio.0030062.txt:        Speciation and the nonmathematical final chapter (“General Conclusions”)
 ```
 
-Then I search in all the documents in the 911 folder in technical with same command. This time I get all the lines from all the txt files in 911report that contains the word "chapter" while being case insensitive:
+Then I search in all the documents in the 911 folder in technical for "CHAPTER" with same command. This time I get all the lines from all the txt files in 911report that contains the word while being case insensitive:
 
 ```
 linyubing@linyubingdeMacBook-Pro lab4 % grep -i "CHAPTER" */911report/*.txt
@@ -234,7 +234,7 @@ technical/911report/chapter-8.txt:                Moussaoui, as discussed in cha
 technical/911report/chapter-9.txt:            Like the national defense effort described in chapter 1, the emergency response to
 ```
 
-At last I search in the documents chapter-11.txt in the 911report folder, and I get all the lines in the txt file that contains the word "chapter" while being case insensitive:
+At last I search in the documents chapter-11.txt in the 911report folder for word "CHAPTER", and I get all the lines in the txt file that contains the word while being case insensitive:
 
 ```
 linyubing@linyubingdeMacBook-Pro lab4 % grep -i "CHAPTER" */*/chapter-11.txt
@@ -245,3 +245,77 @@ linyubing@linyubingdeMacBook-Pro lab4 % grep -i "CHAPTER" */*/chapter-11.txt
                 capabilities were in the domestic arena. In chapter 3 we discussed these
                 Kuala Lumpur, detailed in chapter 6. In late 1999, the National Security Agency
 ```
+
+
+
+The second interesting option is `grep -c` which counts the lines containing the required part in a file while being case sensitive.
+
+My first example is to search in all the documents in the 911report folder for word "chapter", and I get the number of lines containing the word for all txt files in that folder while being case sensitive:
+
+```
+linyubing@linyubingdeMacBook-Pro lab4 % grep -c "chapter" */911report/*.txt
+technical/911report/chapter-1.txt:1
+technical/911report/chapter-10.txt:2
+technical/911report/chapter-11.txt:6
+technical/911report/chapter-12.txt:5
+technical/911report/chapter-13.1.txt:10
+technical/911report/chapter-13.2.txt:0
+technical/911report/chapter-13.3.txt:1
+technical/911report/chapter-13.4.txt:8
+technical/911report/chapter-13.5.txt:13
+technical/911report/chapter-2.txt:2
+technical/911report/chapter-3.txt:6
+technical/911report/chapter-5.txt:4
+technical/911report/chapter-6.txt:8
+technical/911report/chapter-7.txt:4
+technical/911report/chapter-8.txt:9
+technical/911report/chapter-9.txt:1
+technical/911report/preface.txt:0
+```
+
+Then I search in all the documents in the 911report folder again but for word "CHAPTER". Since `grep -c` is case sensitive, I get the number of lines containing the word for all txt files in that folder again but get different numbers:
+
+```
+linyubing@linyubingdeMacBook-Pro lab4 % grep -c "CHAPTER" */911report/*.txt
+technical/911report/chapter-1.txt:0
+technical/911report/chapter-10.txt:0
+technical/911report/chapter-11.txt:0
+technical/911report/chapter-12.txt:0
+technical/911report/chapter-13.1.txt:0
+technical/911report/chapter-13.2.txt:2
+technical/911report/chapter-13.3.txt:4
+technical/911report/chapter-13.4.txt:9
+technical/911report/chapter-13.5.txt:4
+technical/911report/chapter-2.txt:0
+technical/911report/chapter-3.txt:0
+technical/911report/chapter-5.txt:0
+technical/911report/chapter-6.txt:0
+technical/911report/chapter-7.txt:0
+technical/911report/chapter-8.txt:0
+technical/911report/chapter-9.txt:0
+technical/911report/preface.txt:0
+```
+
+At last I search in all the documents in the 911report folder for word "Chapter" and get different numbers for the number of lines containing the word for all txt files again:
+
+```
+linyubing@linyubingdeMacBook-Pro lab4 % grep -c "Chapter" */911report/*.txt
+technical/911report/chapter-1.txt:0
+technical/911report/chapter-10.txt:0
+technical/911report/chapter-11.txt:0
+technical/911report/chapter-12.txt:0
+technical/911report/chapter-13.1.txt:0
+technical/911report/chapter-13.2.txt:0
+technical/911report/chapter-13.3.txt:1
+technical/911report/chapter-13.4.txt:0
+technical/911report/chapter-13.5.txt:0
+technical/911report/chapter-2.txt:0
+technical/911report/chapter-3.txt:0
+technical/911report/chapter-5.txt:0
+technical/911report/chapter-6.txt:0
+technical/911report/chapter-7.txt:0
+technical/911report/chapter-8.txt:0
+technical/911report/chapter-9.txt:0
+technical/911report/preface.txt:0
+```
+
