@@ -12,10 +12,20 @@ Then we enter `dw` which deletes a word from the position of the curosr, which i
 
 <img width="759" alt="截屏2022-11-13 下午11 01 50" src="https://user-images.githubusercontent.com/114268165/201597279-cc939bc6-baf0-4f47-bebd-dd9ffb5d2ed1.png">
 
-Then we enter `i` to enter Insert mode with a "--Insert--" at the bottom of the screen.
+Then we enter `i` to enter Insert mode with a "-- INSERT --" at the bottom of the screen.
 
 <img width="765" alt="截屏2022-11-13 下午11 02 09" src="https://user-images.githubusercontent.com/114268165/201597400-f3e62e5f-5607-4953-b4f8-8ba0aaf755b9.png">
 
 Then we enter the word "base". Now we replace the first "start" with "base" in the file.
 
 <img width="763" alt="截屏2022-11-13 下午11 02 29" src="https://user-images.githubusercontent.com/114268165/201597536-2c2bdd56-1c23-4fb0-ba1f-147050f9c1d0.png">
+
+Then we press <Esc> to exit the insert mode. The "-- INSERT --" at the bottom of the screen disappears.
+
+<img width="763" alt="截屏2022-11-13 下午11 02 41" src="https://user-images.githubusercontent.com/114268165/201597818-3ac0d400-6c2c-4a46-a0ad-8349f6ed66db.png">
+
+Then we press `n` again to search for the next "start" in the file.
+
+<img width="764" alt="截屏2022-11-13 下午11 02 52" src="https://user-images.githubusercontent.com/114268165/201597931-60042449-3907-422d-b476-a0a120291e63.png">
+
+<img width="763" alt="截屏2022-11-13 下午11 03 18" src="https://user-images.githubusercontent.com/114268165/201598001-939f9e1c-e4ca-4212-8639-2f47989acb56.png">
