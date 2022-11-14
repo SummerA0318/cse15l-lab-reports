@@ -32,7 +32,7 @@ We press `i` to enter insert mode and enter "base" again.
 
 <img width="763" alt="截屏2022-11-13 下午11 03 18" src="https://user-images.githubusercontent.com/114268165/201598001-939f9e1c-e4ca-4212-8639-2f47989acb56.png">
 
-We press `Esc` and `n` to jump to the next "start".
+We press `Esc` to exit insert mode and press `n` to jump to the next "start".
 
 <img width="763" alt="截屏2022-11-13 下午11 03 35" src="https://user-images.githubusercontent.com/114268165/201598624-f9596907-35a1-45be-88de-ef9099a8c3d5.png">
 
@@ -47,3 +47,4 @@ We enter "base" and press `Esc` to exit the insert mode. Now we've replaced all 
 We enter `:wq` and then press `Enter` to save and exit the file.
 
 <img width="763" alt="截屏2022-11-13 下午11 04 24" src="https://user-images.githubusercontent.com/114268165/201598906-c2a1dc89-4476-4eb5-8618-ac0c723d8513.png">
+<img width="765" alt="截屏2022-11-13 下午11 04 38" src="https://user-images.githubusercontent.com/114268165/201599166-3f275648-384b-4d7c-a6d2-0f1e49dfc585.png">
