@@ -7,3 +7,5 @@ First test for cse15l lab
 [Lab Report 2](https://summera0318.github.io/cse15l-lab-reports/Lab-Report-2.html)
 
 [Lab Report 3](https://summera0318.github.io/cse15l-lab-reports/Lab-Report-3.html)
+
+[Lab Report 4](https://summera0318.github.io/cse15l-lab-reports/Lab-Report-4.html)
