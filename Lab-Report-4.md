@@ -1,4 +1,6 @@
 
+## Part 1
+
 The task I pick is to change the name of the start parameter and its uses to base in DocSearchServer.java, the vim commands my group come up with is `vim DocSearchServer.java<Enter>/start<Enter>dwibase<Esc>ndwibase<Esc>ndwibase<Esc> :wq<Enter>`
 
 First we open the terminal and enter the directory where the DocSearchServer.java file is stored. Then we enter `vim DocSearchServer.java` and press `Enter` to open the file in vim. The cursor is at the first character now.
@@ -49,3 +51,6 @@ We enter `:wq` and then press `Enter` to save and exit the file.
 
 <img width="763" alt="截屏2022-11-13 下午11 04 24" src="https://user-images.githubusercontent.com/114268165/201598906-c2a1dc89-4476-4eb5-8618-ac0c723d8513.png">
 <img width="765" alt="截屏2022-11-13 下午11 04 38" src="https://user-images.githubusercontent.com/114268165/201599166-3f275648-384b-4d7c-a6d2-0f1e49dfc585.png">
+
+## Part 2
+
