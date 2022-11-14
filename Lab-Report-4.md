@@ -54,3 +54,8 @@ We enter `:wq` and then press `Enter` to save and exit the file.
 
 ## Part 2
 
+I spent 1:19:67 using VisualStudio Code to edit the file in my local computer, scp it onto the remote computer and run it on the remote computer. I spent 1:11:51 using vim commands to edit the file on remote server and run it.
+
+I find that when using VisualStudio Code, editing is very fast but scp and ssh takes much more time. On the contrary, using vim commands to edit the file on remote server takes me the most of the time.
+
+So I prefer to edit with VisualStudio Code because if I need to do a large program, I would make much more edits than this time so I want to work with the one I can edit more conviniently.
