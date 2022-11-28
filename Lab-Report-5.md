@@ -41,11 +41,14 @@ else
 fi
 ```
 
-This is the output of the GradeServer when 
-
-<img width="936" alt="截屏2022-11-28 上午1 21 51" src="https://user-images.githubusercontent.com/114268165/204241578-ce25efd5-57c9-4b72-b3b1-68ecd6770883.png">
+This is the output of the GradeServer when the student submission is using a wrong filename so we cannot find the file and thus giving a score of 0.
 
 <img width="936" alt="截屏2022-11-28 上午1 22 37" src="https://user-images.githubusercontent.com/114268165/204241665-7cb961e3-f2f9-4e24-a652-a585674d4d3d.png">
 
+This is the output of the GradeServer when the student submission has a syntax error so we cannot save and run the file and thus giving a score of 0.
+
 <img width="956" alt="截屏2022-11-28 上午1 24 28" src="https://user-images.githubusercontent.com/114268165/204241699-797bac27-437c-47f7-8afe-080339ed7a43.png">
 
+This is the output of the GradeServer when the student submission is using a correct filename and can compile correctly so we continue to run the tests for the submission. The student fails 2 of the 8 tests.
+
+<img width="936" alt="截屏2022-11-28 上午1 21 51" src="https://user-images.githubusercontent.com/114268165/204241578-ce25efd5-57c9-4b72-b3b1-68ecd6770883.png">
